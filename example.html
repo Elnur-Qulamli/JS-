@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .mini_header a:hover {
+        background-color: #D8D8D8;
+    }
+
+</style>
+
+<body>
+    <script>
+        let header = document.createElement("header");
+        document.body.appendChild(header);
+        header.id = "header"
+        header.style.width = "100%";
+        header.style.height = "17em";
+        header.style.backgroundColor = "#1ABC9C";
+        header.style.textAlign = "center";
+
+        let h1 = document.createElement("h1");
+        header.appendChild(h1);
+        h1.innerText = "My Website";
+        h1.style.color = "#fff";
+        h1.style.paddingTop = "7%";
+
+        let h6 = document.createElement("h6");
+        header.appendChild(h6);
+        h6.innerText = "A responsive website created by me.";
+        h6.style.color = "#fff";
+
+        let mini_header = document.createElement("div");
+        document.body.appendChild(mini_header);
+        mini_header.className = "mini_header";
+        mini_header.style.width = "100%";
+        mini_header.style.height = "3em";
+        mini_header.style.backgroundColor = "#333333";
+        mini_header.style.display = "flex";
+
+        let a_home = document.createElement("a");
+        a_home.innerText = "Home";
+        mini_header.appendChild(a_home);
+        a_home.style.color = "#fff";
+        a_home.style.backgroundColor = "#666666";
+        a_home.style.width = "5em";
+        a_home.style.paddingTop = "0.7em";
+        a_home.style.textAlign = "center";
+  
+        let link_first = document.createElement("a");
+        link_first.innerText = "Link";
+        mini_header.appendChild(link_first);
+        link_first.style.color = "#fff";
+        link_first.style.width = "5em";
+        link_first.style.paddingTop = "0.7em";
+        link_first.style.textAlign = "center";
+
+        let link_second = document.createElement("a");
+        link_second.innerText = "Link";
+        mini_header.appendChild(link_second);
+        link_second.style.color = "#fff";
+        link_second.style.width = "5em";
+        link_second.style.paddingTop = "0.7em";
+        link_second.style.textAlign = "center";
+
+        let link_third = document.createElement("a");
+        link_third.innerText = "Link";
+        mini_header.appendChild(link_third);
+        link_third.style.color = "#fff";
+        link_third.style.width = "5em";
+        link_third.style.paddingTop = "0.7em";
+        link_third.style.textAlign = "center";
+ 
+        let main = document.createElement("main");
+        document.body.appendChild(main);
+        main.id = "main";
+        main.style.display = "flex";
+
+        let container = document.createElement("div");
+        container.classList.add("container-fluid");
+        main.appendChild(container);
+
+        let row = document.createElement("div");
+        row.classList.add("row")
+        container.appendChild(row);
+
+        let aside = document.createElement("aside");
+        aside.className = "aside";
+        row.appendChild(aside);
+        aside.style.paddingLeft = "1em";
+        aside.style.paddingRight = "1em";
+        aside.style.backgroundColor = "#F1F1F1";
+        aside.classList.add("col-12");
+        aside.classList.add("col-sm-3");
+
+        let h4_aboutMe = document.createElement("h4");
+        aside.appendChild(h4_aboutMe);
+        h4_aboutMe.innerText = "About Me"
+        h4_aboutMe.style.paddingTop = "2em";
+
+        let photoOfme = document.createElement("p");
+        aside.appendChild(photoOfme);
+        photoOfme.innerText = "Photo of me:";
+
+        let photo_div = document.createElement("div");
+        photo_div.innerText = "Image";
+        photo_div.style.paddingLeft = "1em";
+        photo_div.style.paddingTop = "1em";
+        aside.appendChild(photo_div);
+        photo_div.style.width = "100%";
+        photo_div.style.height = "15em";
+        photo_div.style.backgroundColor = "#AAAAAA";
+
+        let SomeText = document.createElement("p");
+        aside.appendChild(SomeText);
+        SomeText.innerText = "Some text about me in culpa qui officia deserunt mollit anim..";
+
+        let MoreText = document.createElement("h4");
+        aside.appendChild(MoreText);
+        MoreText.innerText = "More Text";
+
+        let LoremIpsum = document.createElement("p");
+        aside.appendChild(LoremIpsum);
+        LoremIpsum.innerText = "Lorem ipsum dolor sit ame.";
+
+        let photo_first = document.createElement("div");
+        photo_first.innerText = "Image";
+        aside.appendChild(photo_first);
+        photo_first.className = "photo_div";
+        photo_first.style.paddingLeft = "1em";
+        photo_first.style.paddingTop = "1em";
+        photo_first.style.marginBottom = "1em";
+        photo_first.style.width = "100%";
+        photo_first.style.height = "4em";
+        photo_first.style.backgroundColor = "#AAAAAA";
+
+        let photo_second = document.createElement("div");
+        photo_second.innerText = "Image";
+        aside.appendChild(photo_second);
+        photo_second.style.paddingLeft = "1em";
+        photo_second.style.paddingTop = "1em";
+        photo_second.style.marginBottom = "1em";
+        photo_second.style.width = "100%";
+        photo_second.style.height = "4em";
+        photo_second.style.backgroundColor = "#AAAAAA";
+
+        let photo_third = document.createElement("div");
+        photo_third.innerText = "Image";
+        aside.appendChild(photo_third);
+        photo_third.style.paddingLeft = "1em";
+        photo_third.style.paddingTop = "1em";
+        photo_third.style.marginBottom = "1em";
+        photo_third.style.width = "100%";
+        photo_third.style.height = "4em";
+        photo_third.style.backgroundColor = "#AAAAAA";
+
+        let main_part = document.createElement("div");
+        row.appendChild(main_part);
+        main_part.style.paddingLeft = "1em";
+        main_part.classList.add("col-12");
+        main_part.classList.add("col-sm-9");
+        main_part.style.verticalAlign = "top";
+
+        let title_heading = document.createElement("h4");
+        main_part.appendChild(title_heading);
+        title_heading.innerText = "TITLE HEADING";
+        title_heading.style.paddingTop = "2em";
+
+        let title_description = document.createElement("p");
+        main_part.appendChild(title_description);
+        title_description.innerText = "Title description, Dec 7, 2017";
+
+        let photo_main = document.createElement("div");
+        photo_main.innerText = "Image";
+        main_part.appendChild(photo_main);
+        photo_main.style.width = "100%";
+        photo_main.style.height = "15em";
+        photo_main.style.backgroundColor = "#AAAAAA";
+        photo_main.style.paddingLeft = "1em";
+        photo_main.style.paddingTop = "1em";
+
+        let someText_main = document.createElement("p");
+        main_part.appendChild(someText_main);
+        someText_main.innerText = "Some text..";
+
+        let suntIn = document.createElement("p");
+        main_part.appendChild(suntIn);
+        suntIn.innerText = "Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.";
+
+        let title_heading_second = document.createElement("h4");
+        main_part.appendChild(title_heading_second);
+        title_heading_second.innerText = "TITLE HEADING"
+
+        let title_description_second = document.createElement("p");
+        main_part.appendChild(title_description_second);
+        title_description_second.innerText = "Title description, Dec 7, 2017";
+
+        let photo_end = document.createElement("div");
+        photo_end.innerText = "Image";
+        main_part.appendChild(photo_end);
+        photo_end.style.width = "100%";
+        photo_end.style.height = "15em";
+        photo_end.style.backgroundColor = "#AAAAAA";
+        photo_end.style.paddingLeft = "1em";
+        photo_end.style.paddingTop = "1em";
+
+        let some_text_end = document.createElement("p");
+        main_part.appendChild(some_text_end);
+        some_text_end.innerText = "Some text..";
+
+        let suntInEnd = document.createElement("p");
+        main_part.appendChild(suntInEnd);
+        suntInEnd.innerText = "Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.";
+
+        let footer = document.createElement("footer");
+        document.body.appendChild(footer);
+        footer.innerText = "Footer";
+        footer.style.height = "6em";
+        footer.style.backgroundColor = "#AAAAAA";
+        footer.style.display="flex";
+        footer.style.alignItems="center";
+        footer.style.justifyContent="center";
+
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
